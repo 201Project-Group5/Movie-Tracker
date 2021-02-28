@@ -1,0 +1,41 @@
+:root {
+    --primary--color:#272727;
+    --seccondary-color:#bb3535;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 960px;
+    margin: auto;
+}
+
+header img {
+    /* float:left; */
+    width: 100px;
+    padding: 15px;
+}
+ header nav {
+     width: 960px;
+ }
+
+header ul {
+    padding: 25px;
+    float:right;
+}
+header ul li {
+    display: inline;
+    padding-left: 25px;
+}
+
+header {
+    height: 80px;
+    background-color: rgba(207, 47, 47, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary--color);
+}
