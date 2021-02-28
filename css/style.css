@@ -12,7 +12,10 @@ main {
     margin: auto;
     min-height: 100vh;
 }
-
+/* h1{
+    padding: 48px;
+    font-size: 75px;
+ }*/
 
 /* ----------------------------header---------------------------- */
 
@@ -56,6 +59,8 @@ footer {
     position: static;
     bottom: 0px;
     width: 100%;
+   left: 0;
+  
 }
 
 footer img {
@@ -262,12 +267,35 @@ main article {
 .genres {
     float: left;
     width: 25%;
-    
+    background-color: antiquewhite;
+      
 }
+
+
 .genres img {
     
     border: 2px solid white;
+    padding-left: 12px;
 }
+
+.genres p{
+    padding: 15px;
+}
+.genres button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color:red;
+    text-align: center;
+    cursor: pointer;
+    width: 70%;
+    font-size: 18px;
+  }
+  
+  .genres button:hover {
+    opacity: 0.7;
+  }
 
 #profile {
     text-align: center;
