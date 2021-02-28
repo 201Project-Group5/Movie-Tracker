@@ -11,10 +11,11 @@ main {
     width: 960px;
     margin: auto;
 }
+/* ----------------------------header---------------------------- */
 
 header img {
-    float:left;
-    width: 100px;
+    /* float:left; */
+    width: 225px;
     padding: 15px;
 }
  /* header nav {
@@ -39,12 +40,13 @@ header a {
     text-decoration: none;
     color: var(--primary--color);
 }
+/* ----------------------------footer---------------------------- */
 footer{
     text-align: center;
     background-color: lightgray;
 }
 footer img{
-    width:100px;
+    width:190px;
     margin: 10px 0 10px 0;
 
 }
@@ -53,7 +55,7 @@ footer h6{
     display: inline;
     width: 100%;
   }
-
+/* ----------------------------main---------------------------- */
 main section h1{
 text-align: center;
 font-size: 30px;
@@ -76,6 +78,41 @@ main article section h5{
 main article section  {
     text-align: center;
 }
+#toprated section {
+  display: inline;
+  text-align: center;
+  
+  
+}
+#toprated section iframe{
+  padding: 15px;
+}
+.left{
+  margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------slide show css------------------------------------ */
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
