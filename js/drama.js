@@ -11,9 +11,12 @@ function dramaRender() {
         boxEl.appendChild(movieImg);
         const movieTitle = document.createElement('h2');
         boxEl.appendChild(movieTitle);
-        const favEl = document.createElement('a');
+        console.log('movieIndex');
+        const favEl = document.createElement('button');
         boxEl.appendChild(favEl);
         favEl.textContent = 'Add to Favourite ';
+        favEl.id = i ; 
+
         const watchEl = document.createElement('a');
         boxEl.appendChild(watchEl);
         watchEl.textContent = 'Add to Watch List';
@@ -21,5 +24,25 @@ function dramaRender() {
       }
     }
   }
+  console.log('movieIndex');
+  function handleAddToFav2(event) {
+    event.preventDefault();
 
-  dramaRender();
+    let movieIndex = event.target.id;
+
+    // console.log(movieIndex);
+    console.log('movieIndex');
+    let movieObject = Movie.allMovies[movieIndex];
+
+    favList.addToFavList(movieObject.title, movieObject.year, movieObject.category, movieObject.poster);
+
+    favList.saveToLocalStorage();
+}
+
+
+dramaContent = document.getElementById('dramacontent');
+
+dramaContent.addEventListener('add', handleAddToFav2);
+
+
+dramaRender();
