@@ -5,10 +5,13 @@ function dramaRender() {
       if (Movie.allMovies[i].category === 'drama') {
         const rowEl = document.createElement('section');
         container.appendChild(rowEl);
+        
         const boxEl = document.createElement('article');
         rowEl.appendChild(boxEl);
+        boxEl.setAttribute("class","dramasec");
         const movieImg = document.createElement('img');
         boxEl.appendChild(movieImg);
+        rowEl.setAttribute("class","d.dramaimg-inner");
         const movieTitle = document.createElement('h2');
         boxEl.appendChild(movieTitle);
         console.log('movieIndex');
