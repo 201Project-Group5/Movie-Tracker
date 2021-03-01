@@ -1,97 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Tracker</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
-
 <body>
     <header>
         <nav>
-            <a href="./"><img src="./images/logo.png" alt="logo"></a>
+            
             <ul>
-                <li><a href="./index.html"> Home</a></li>
-                <li><a href="./profile.html">Profile</a></li>
-                <li><a href="./aboutus.html">About Us</a></li>
-                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a id="logo" href="./">Movie Tracker</a></li>
+                <li><a class="nav" href="../index.html"> Home</a></li>
+                <li><a class="nav" href="../profile.html">Profile</a></li>
+                <li><a class="nav" href="../aboutus.html">About Us</a></li>
+                <li><a class="nav" href="../contactus.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Welcome to Movie Tracker!</h1>
-            <p>Where you can view, rate and watch your favorite movie trailers, add them to your lists and more!</p>
+        <section id="banner">
+            <video id="myVideo" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                <source src="https://vod-progressive.akamaized.net/exp=1614645815~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1003%2F20%2F505018188%2F2312338101.mp4~hmac=9af59329bafa6a227a792b5ce831328dc4db3ea6287316c110d3b57716a7affe/vimeo-prod-skyfire-std-us/01/1003/20/505018188/2312338101.mp4?filename=Raya+and+the+Last+Dragon+-+Trailer+%28126848%29.mp4" type="video/mp4">
+                    <source src="movie.webm" type="video/webm">Sorry, your browser does not support HTML5 video.</video>
         </section>
-        <br>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="./images/slide1.jpg" style="width:100%">
-                <div class="text">
-                    Pixar Shares Details About Next Original Film 'Luca'<br>Watch the teaser trailer
-                    <a href="https://www.youtube.com/watch?v=YdAIBlPVe9s">here.</a></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="./images/slide2.jpg" style="width:100%">
-                <div class="text">The first trailer for Zack Snyder’s movie ‘Army of the Dead’ is out.<br>Watch it
-                    <a href="https://www.youtube.com/watch?v=H83kjG5RCT8">here.</a></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src='./images/slide3.jpg' style="width:100%">
-                <div class="text">Shadow and Bone’s first trailer teases Netflix’s next big hit.<br>Watch it
-                    <a href="https://www.youtube.com/watch?v=UHJYYd_RnJc">here.</div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-                <br>
-                <section>
-                    <h1>Movie Categories</h1>
+        
+                <section id="catsec">
+                    <h1 style="margin:auto; background-color: rgb(0, 0, 0, 0.5); width: fit-content; align-items:center;">Movie Categories</h1>
 
                     <section class="genres">
                         <a href="./categories/action.html"> <img src="./images/genres/action.jpg" alt=""></a>
-                        <p>To Watch More Action Movies</p>
-                        <p><button>Watch Now</button></p>
                     </section>
 
                     <section class="genres">
                         <a href="./categories/horror.html"><img src="./images/genres/horror.jpg" alt=""></a>
-                        <p>To Watch More Horror Movies</p>
-                        <p><button>Watch Now</button></p>
                     </section>
 
                     <section class="genres">
                         <a href="./categories/drama.html"><img src='./images/genres/drama.jpg' alt=""></a>
-                        <p>To Watch More Drama Movies</p>
-                        <p><button>Watch Now</button></p>
                     </section>
 
                     <section class="genres">
                         <a href="./categories/comedy.html"><img src="./images/genres/comedy.jpg" alt=""></a>
-                        <p>To Watch More Comedy Movies</p>
-                        <p><button>Watch Now</button></p>
                     </section>
 
                 </section>
@@ -99,23 +56,46 @@
                 <br>
                 <br>
                 <section id="toprated">
-                    <h1>Top Rated Movies</h1>
-                    <section class="left"><iframe width="420" height="236" src="https://www.youtube.com/embed/NYH2sLid0Zc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
-                    <section><iframe width="420" height="236" src="https://www.youtube.com/embed/NYH2sLid0Zc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
-                    <section class="left"><iframe width="420" height="236" src="https://www.youtube.com/embed/NYH2sLid0Zc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
-                    <section><iframe width="420" height="236" src="https://www.youtube.com/embed/NYH2sLid0Zc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+                    <h1 style="margin:auto; width: fit-content; align-items:center;">Top Rated Movies</h1>
+                    <section class="left"><video width="470" height="370" controls>
+                        <source src="https://vod-progressive.akamaized.net/exp=1614648549~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3779%2F19%2F493895037%2F2227727798.mp4~hmac=bd3e4822fb0e0de25c777be71904ca7448b8f38b4a8fce2647f65bb86ca4563e/vimeo-prod-skyfire-std-us/01/3779/19/493895037/2227727798.mp4?filename=The+Little+Things+-+Trailer+%28126821%29.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                      </video></section>
+                      <section class="left"><video width="470" height="370" controls>
+                        <source src="https://vod-progressive.akamaized.net/exp=1614648553~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2652%2F19%2F488260113%2F2189645490.mp4~hmac=ded9dfee423c5bf2a7721f845ee3f8536671fb3f45a33a0ecf9c4de13a13ad83/vimeo-prod-skyfire-std-us/01/2652/19/488260113/2189645490.mp4?filename=Wonder+Woman+1984+-+CCXP+Trailer+%28126811%29.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                      </video></section>
+                      <section class="left"><video width="470" height="370" controls>
+                        <source src="https://vod-progressive.akamaized.net/exp=1614648706~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F143%2F18%2F450719181%2F1981826830.mp4~hmac=49e75cd34b68c6cd6e44c3f1116b1d11c0b4c5cc1d86fdc746ee443a4590397f/vimeo-prod-skyfire-std-us/01/143/18/450719181/1981826830.mp4?filename=The+Batman+-+Teaser+Trailer+%28126668%29.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                      </video></section>
+                      <section class="left"><video width="470" height="370" controls>
+                        <source src="https://vod-progressive.akamaized.net/exp=1614648773~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4883%2F17%2F449416255%2F1974598762.mp4~hmac=0cbeb267cda6580a1e071e81236c260ea2eebea1a6e9ff4c2105fb9e54357877/vimeo-prod-skyfire-std-us/01/4883/17/449416255/1974598762.mp4?filename=Death+on+the+Nile+-+Trailer+%28126664%29.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                      </video></section>
                 </section>
-
-
+                <section id="subscribe">
+                    <form action="/action_page.php">
+                        <div class="container">
+                          <h2>Subscribe to our Newsletter</h2>
+                        </div>
+                      
+                        <div>
+                          <input type="text" placeholder="Name" name="name" required>
+                          <input type="text" placeholder="Email address" name="mail" required>
+                          <label>
+                            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                          </label>
+                        </div>
+                      
+                        <div class="container">
+                          <input type="submit" value="Subscribe">
+                        </div>
+                      </form>
+                </section>
     </main>
     <footer>
-        <section>
-            <img src="./images/logo.png" alt="logo">
-            <article>
-                <h6>&copy Movie Tracker</h6>
-            </article>
-        </section>
-
+        <a id="footerlogo" href="./">&copy; Movie Tracker 2021</a>
     </footer>
     <script src="js/app.js"></script>
     <script src="./js/slide.js"></script>
