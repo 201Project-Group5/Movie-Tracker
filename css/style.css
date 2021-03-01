@@ -1,6 +1,6 @@
 :root {
-    --primary--color: #272727;
-    --seccondary-color: #bb3535;
+    --primary--color: #111010;
+    --seccondary-color: #f3f3f3;
 }
 
 
@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color:var(--primary--color);
+    color: var(--seccondary-color);
+    font-family:'Yanone Kaffeesatz', sans-serif;
+}
 main {
     width: 960px;
     margin: auto;
@@ -30,52 +35,125 @@ header img {
 /* header nav {
      width: 960px;
  } */
-
-header ul {
-    padding: 25px;
-    float: right;
+#logo {
+    width:100%;
+    text-align: center;
+    font-family: 'Fascinate', cursive;
+    margin-right: 250px;   
+    font-size: 30px; 
+    text-decoration: none;
+    color: var(--seccondary-color);
 }
 
 header ul li {
-    display: inline;
-    padding-left: 25px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top:25px;
+    
 }
 
 header {
     height: 80px;
-    background-color: lightgray;
+    margin:auto;
+    width: 960px;
 }
 
-header a {
+a.nav {
     text-decoration: none;
-    color: var(--primary--color);
+    padding-left: 35px;
+    color:var(--seccondary-color);
+    font-size: 20px;
+    font-weight:700;
 }
 
 
 /* ----------------------------footer---------------------------- */
 
 footer {
-    text-align: center;
-    background-color: lightgray;
-    position: static;
-    bottom: 0px;
-    width: 100%;
-   left: 0;
-  
+text-align: center;
+position: static;
+bottom: 0px;
+width: 100%;
+height: 100px;
+left: 0;
+clear: both;
+font-family: 'Fascinate', cursive;
+
 }
 
-footer img {
-    width: 190px;
-    margin: 10px 0 10px 0;
+#footerlogo {
+    padding: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    color:var(--seccondary-color);
 }
 
-footer h6 {
-    display: inline;
-    width: 100%;
-}
 
 
 /* ----------------------------main---------------------------- */
+#banner {
+    height:100px;
+    width:100%;
+    overflow: hidden;
+}
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+    width:auto;
+    z-index: -100;
+}
+ 
+#catsec {
+    margin-top:300px;
+    clear: both;
+}
+main section {
+    text-align: center;
+    margin: 15px 0;
+}
+main section section {
+    float:left;
+}
+
+main section section article {
+    overflow: hidden;
+}
+
+
+main section section article img {
+    border-radius: 4px;
+    padding: 15px;
+    transition: transform .5s ease;
+}
+
+main section section article img:hover {
+    transform: scale(1.1);
+}
+
+main section section article button {
+    border-radius: 4px;
+    height: 40px;
+    width:80px;
+    background-color:var(--seccondary-color);
+    color: var(--primary--color);
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 900;
+}
+
+main section section article button:hover {
+    background-color: var(--primary--color);
+    color: var(--seccondary-color);
+}
+
+main section section article button:first-of-type {
+margin-right: 10px;
+}
 
 main section h1 {
     text-align: center;
@@ -108,17 +186,57 @@ main article section {
 }
 
 #toprated {
-    padding: 33px;
-    clear: both;
+  margin: 400px 0 30px 0; 
 }
 
 #toprated section iframe {
-    padding: 15px;
+/* margin-right: 10px; */
 }
 
 .left {
-    margin-left: 50px;
+    float: left;
+    margin-right: 5px;
 }
+
+/* Subscribe */
+#subscribe {
+    margin: 900px 0 30px 0;
+    background-color: var(--primary--color);
+}
+
+#subscribe form {
+background-color: var(--primary--color);
+}
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color:rgb(15, 14, 14);
+    color:var(--seccondary-color);
+    border-radius: 5px;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  #subscribe h2 {
+      font-size: 30px;
+      padding: 15px;
+  }
+
+/* subscribe end */
 
 
 /*---------------------- contact us-----------------------*/
@@ -128,138 +246,6 @@ main article section {
     border: solid 1px red;
 }
 
-
-/* --------------------------slide show css------------------------------------ */
-
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-
-/* Hide the images by default */
-
-.mySlides {
-    /* display: none; */
-}
-
-
-/* Next & previous buttons */
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-
-/* Position the "next button" to the right */
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/* Caption text */
-
-.text {
-    color: #f2f2f2;
-    font-size: 30px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: left;
-    background-color: rgb(0, 0, 0, .5);
-   
-}
-.text a {
-    color: #b19de5;
-   text-decoration: none;
-   
-}
-
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-
-/* The dots/bullets/indicators */
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-
-/* Fading animation */
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
 main article {
     display: inline;
     width: 25%;
@@ -267,36 +253,21 @@ main article {
 
 .genres {
     float: left;
-    width: 25%;
-    background-color: antiquewhite;
-      
+    width: 25%;      
 }
 
 
 .genres img {
     
-    border: 2px solid white;
     padding-left: 12px;
+    height: 280px;
+    overflow: hidden;
 }
 
-.genres p{
-    padding: 15px;
+.genres:hover img {
+    transform: scale(1.1);
 }
-.genres button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color:red;
-    text-align: center;
-    cursor: pointer;
-    width: 70%;
-    font-size: 18px;
-  }
-  
-  .genres button:hover {
-    opacity: 0.7;
-  }
+
 
 #profile {
     text-align: center;
