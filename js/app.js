@@ -1,7 +1,10 @@
+'use strict';
+///////////////////////////// Favorite list /////////////////////////
 const FavoriteList = function(favMovies) {
   this.favMovies = favMovies;
 };
 
+// eslint-disable-next-line no-unused-vars
 const favList = new FavoriteList([]);
 
 
@@ -20,10 +23,31 @@ FavoriteList.prototype.saveToLocalStorage = function() {
 
 };
 
+//////////////////////////////////////Watch List///////////
+
+const watchList = function(watchMovies) {
+  this.watchMovies = watchMovies;
+};
+// eslint-disable-next-line no-unused-vars
+const myWatchList = watchList([]);
+
+watchList.prototype.addToWatchList = function(title, year, category, poster){
+  this.watchMovies.push(new Movie(title, year, category, poster));
+};
+
+
+watchList.prototype.saveToLocalStorage2 = function (){
+  let wMove = JSON.parse(localStorage.getItem('watchMovies'));
+  if (wMove === null) {
+    wMove = [];
+  }
+
+  localStorage.setItem('watchMovies', JSON.stringify(wMove.concat(this.watchMovies)));
+};
 
 
 
-
+/////////////////////////////////////////////////////////////////////////////////
 const Movie = function(title, year, category) {
   this.title = title;
   this.year = year;

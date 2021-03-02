@@ -30,9 +30,7 @@ function actionRender() {
   }
 
 }
-
-
-
+//////////////////////////////////////////////////////////
 function handleAddToFav(event) {
   event.preventDefault();
   let movieIndex = event.target.id;
@@ -46,8 +44,19 @@ function handleAddToFav(event) {
 }
 
 
-actionContent = document.getElementById('actioncontent');
+let actionContent = document.getElementById('actioncontent');
 
 actionContent.addEventListener('click', handleAddToFav);
+///////////////////////////////////////////////////////////////////////////////
+let actionContent2 = document.getElementById('actioncontent');
+actionContent2.addEventListener('click',handleAddToWatch);
+
+function handleAddToWatch (event){
+  event.preventDefault();
+  let movieWatchIndex = event.target.id;
+  let movieWatchObject = Movie.allMovies[movieWatchIndex];
+  myWatchList.addToWatchList(movieWatchObject.title,movieWatchObject.year,movieWatchObject.category,movieWatchObject.poster);
+  myWatchList.saveToLocalStorage2();
+}
 
 actionRender();
