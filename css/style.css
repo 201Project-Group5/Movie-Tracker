@@ -42,7 +42,7 @@ header img {
     margin-right: 250px;   
     font-size: 30px; 
     text-decoration: none;
-    color: var(--seccondary-color);
+    color: #F65560;
 }
 
 header ul li {
@@ -66,7 +66,10 @@ a.nav {
     font-weight:700;
 }
 
-
+a:hover.nav {
+    color:#F65560;
+    text-decoration: underline;
+}
 /* ----------------------------footer---------------------------- */
 
 footer {
@@ -135,9 +138,8 @@ main section section article img:hover {
 }
 
 main section section article button {
-    border-radius: 4px;
     height: 40px;
-    width:80px;
+    width:93px;
     background-color:var(--seccondary-color);
     color: var(--primary--color);
     cursor: pointer;
@@ -147,12 +149,12 @@ main section section article button {
 }
 
 main section section article button:hover {
-    background-color: var(--primary--color);
+    background-color: #F65560;
     color: var(--seccondary-color);
 }
 
 main section section article button:first-of-type {
-margin-right: 10px;
+margin-right: 2px;
 }
 
 main section h1 {
@@ -274,20 +276,44 @@ main article {
     margin: 20px;
 }
 
-#favoriteList,
-tr,
-th,
-td {
-    text-align: center;
-    border: solid 1px black;
+
+
+#profile img {
+    width: 80px;
 }
 
-#watchList,
+
+table
 tr,
-th,
 td {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    width:180px;
+    height: 50px;
     text-align: center;
-    border: solid 1px black;
+    border: solid 1px rgb(173, 172, 172);
+    vertical-align: middle;
+}
+
+table th {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    height: 50px;
+    width:180px;
+    text-align: center;
+    border: solid 1px wheat;
+    vertical-align: middle;
+}
+
+#profile img.trash {
+    width: 25px;
+    padding: 0;
+}
+
+td.imgcontainer {
+    width:120px;
 }
 
 #profileContainer {
@@ -295,8 +321,14 @@ td {
     margin: 20px;
 }
 
-#favoriteList,
-#watchList {
-    margin-left: auto;
-    margin-right: auto;
+#favoriteList h3,
+#watchList h3{
+    margin:15px 0;
+    font-size: 25px;
+}
+
+#profiledetails {
+    text-align: left; 
+    font-size: 17px;
+    padding: 15px 0;   
 }
