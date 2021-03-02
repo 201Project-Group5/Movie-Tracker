@@ -332,3 +332,23 @@ td.imgcontainer {
     font-size: 17px;
     padding: 15px 0;   
 }
+.teampic{
+    border-radius: 50%;
+    width: 251px;
+    height: 251px;
+    
+}
+  .cont  {
+    float: left;
+}
+
+
+h4{
+    color:red;
+    font-size: 300%;
+    padding-top: 70px;
+}
+
+i{
+   float: right; 
+}
