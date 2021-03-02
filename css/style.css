@@ -201,9 +201,9 @@ main article section {
   margin: 400px 0 30px 0; 
 }
 
-#toprated section iframe {
+/*#toprated section iframe {
 /* margin-right: 10px; */
-}
+}*/
 
 .left {
     float: left;
@@ -354,11 +354,31 @@ td.imgcontainer {
     font-size: 17px;
     padding: 15px 0;   
 }
+.teampic{
+    border-radius: 50%;
+    width: 251px;
+    height: 251px;
+    
+}
+  .cont  {
+    float: left;
+}
+
+
+h4{
+    color:red;
+    font-size: 300%;
+    padding-top: 70px;
+}
+
+i{
+   float: right; }
+
 #form input[type=text]{
     width:300px;
-    height: 25px;
+    height: 25px;}
 
-}
+
 #form input[type=email]{
     margin: 15px 0 15px 0;
     width: 300px;
