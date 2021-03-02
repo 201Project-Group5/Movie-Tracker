@@ -540,7 +540,7 @@ main section article p a{
 }
 
 /* The dots/bullets/indicators */
-/* .dot {
+.dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -553,7 +553,7 @@ main section article p a{
 
 .active, .dot:hover {
   background-color: #551b1f;
-} */
+}
 
 /* Fading animation */
 .fade {
