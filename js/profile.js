@@ -11,19 +11,22 @@ function populateTable() {
     tableBodyEl.appendChild(tableRowEl);
 
     let td1El = document.createElement('td');
+    let td1imgEl = document.createElement('img');
     let td2El = document.createElement('td');
     let td3El = document.createElement('td');
     let td4El = document.createElement('td');
     let td5El = document.createElement('td');
     let imgEl = document.createElement('img');
 
-    td1El.textContent = 'X';
+    td1imgEl.src = './images/trash.svg';
+    td1imgEl.setAttribute('class', 'trash');
     td2El.textContent = aflamy[i].title;
     td3El.textContent = aflamy[i].year;
     td4El.textContent = aflamy[i].category;
     imgEl.src = aflamy[i].poster;
 
     tableRowEl.appendChild(td1El);
+    td1El.appendChild(td1imgEl);
     tableRowEl.appendChild(td2El);
     tableRowEl.appendChild(td3El);
     tableRowEl.appendChild(td4El);
@@ -45,22 +48,27 @@ function populateWatchTable(){
     tableBodyEl2.appendChild(tableRowEl2);
 
     let td1El2 = document.createElement('td');
+    let td1imgEl2 = document.createElement('img');
     let td2El2 = document.createElement('td');
     let td3El2 = document.createElement('td');
     let td4El2 = document.createElement('td');
+    let td5El2 = document.createElement('td');
     let imgEl2 = document.createElement('img');
 
-    td1El2.textContent = 'X';
+    td1imgEl2.src = './images/trash.svg';
+    td1imgEl2.setAttribute('class', 'trash');
     td2El2.textContent = aflamy2[x].title;
     td3El2.textContent = aflamy2[x].year;
     td4El2.textContent = aflamy2[x].category;
     imgEl2.src = aflamy2[x].poster;
 
     tableRowEl2.appendChild(td1El2);
+    td1El2.appendChild(td1imgEl2);
     tableRowEl2.appendChild(td2El2);
     tableRowEl2.appendChild(td3El2);
     tableRowEl2.appendChild(td4El2);
-    tableRowEl2.appendChild(imgEl2);
+    tableRowEl2.appendChild(td5El2);
+    td5El2.appendChild(imgEl2);
   }
 
 }
