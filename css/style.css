@@ -161,11 +161,15 @@ main section section article button {
     font-size: 15px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 900;
+    transition-property: background;
+  transition-duration: .3s;
+  transition-timing-function: linear;
 }
 
 main section section article button:hover {
     background-color: #F65560;
-    color: var(--seccondary-color);
+   
+    /* color: var(--seccondary-color); */
 }
 
 main section section article button:first-of-type {
