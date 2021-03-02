@@ -23,6 +23,7 @@ FavoriteList.prototype.saveToLocalStorage = function() {
   }
 
   localStorage.setItem('favMovies', JSON.stringify(movies.concat(this.favMovies)));
+  this.favMovies=[];
 
 };
 
@@ -49,6 +50,7 @@ WatchList.prototype.saveToLocalStorage2 = function() {
   }
 
   localStorage.setItem('watchMovies', JSON.stringify(wMovie.concat(this.watchMovies)));
+  this.watchMovies=[];
 };
 
 
