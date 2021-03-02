@@ -6,6 +6,10 @@
 
 * {
     box-sizing: border-box;
+    
+}
+body{
+    background-color: #0c0c0c;
 }
 
 body {
@@ -17,6 +21,7 @@ main {
     width: 960px;
     margin: auto;
     min-height: 100vh;
+    /* background-color: grey; */
 }
 /* h1{
     padding: 48px;
@@ -27,8 +32,9 @@ main {
 
 header img {
     /* float:left; */
-    width: 225px;
+    font-size: 100px;
     padding: 15px;
+    margin: 5px 0 0 25px;
 }
 
 
@@ -161,21 +167,25 @@ main section h1 {
     text-align: center;
     font-size: 30px;
     margin: 15px 0 15px 0;
+    color:#ebebeb;
 }
 
 main section p {
     text-align: center;
     font-size: 20px;
+    color:#ebebeb;
 }
 
 main article h1 {
     text-align: center;
     font-size: 30px;
     margin: 15px 0 15px 0;
+    color:#ebebeb;
 }
 
 main article section h5 {
     text-align: center;
+    color:#ebebeb;
 }
 
 main article section {
@@ -191,9 +201,9 @@ main article section {
   margin: 400px 0 30px 0; 
 }
 
-#toprated section iframe {
+/*#toprated section iframe {
 /* margin-right: 10px; */
-}
+}*/
 
 .left {
     float: left;
@@ -245,8 +255,14 @@ input[type=text], input[type=submit] {
 
 #contactus {
     padding: 5px;
-    border: solid 1px red;
+    float: left;
+    width: 50%;
+    text-align: left;
+    
 }
+
+
+
 
 main article {
     display: inline;
@@ -258,7 +274,14 @@ main article {
     width: 25%;      
 }
 
-
+#genrebox{
+    width: 100%;
+    margin-left: 28px;
+}
+#genrebox h1{
+    width: 100%;
+    margin-left: -28px;
+}
 .genres img {
     
     padding-left: 12px;
@@ -269,7 +292,6 @@ main article {
 .genres:hover img {
     transform: scale(1.1);
 }
-
 
 #profile {
     text-align: center;
@@ -350,5 +372,34 @@ h4{
 }
 
 i{
-   float: right; 
+   float: right; }
+
+#form input[type=text]{
+    width:300px;
+    height: 25px;}
+
+
+#form input[type=email]{
+    margin: 15px 0 15px 0;
+    width: 300px;
+    height: 25px;
+}
+#form textarea{
+    margin: 15px 0 15px 0;
+    width: 300px;
+    height: 75px;
+}
+main section article p a{
+    text-decoration: none;
+    color: #F65560;
+}
+#form input[type="submit"]{
+    width: 300px;
+}
+/* #contactcontainer{
+    margin-top: px;
+  
+} */
+#contactmain{
+    margin-top: 125px;
 }
