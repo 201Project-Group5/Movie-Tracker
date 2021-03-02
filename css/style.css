@@ -211,7 +211,8 @@ main article section {
 }
 
 #toprated {
-  margin: 400px 0 30px 0; 
+  margin: 400px 0 30px 0;
+  position: relative; 
 }
 
 
@@ -435,6 +436,41 @@ main section article p a{
     margin-top: 125px;
 }
 
+.overlayText1{
+ position:absolute;
+ top: 315px;
+  left:0%;
+  border: rgb(15, 14, 14,0.5);
+  z-index:1;
+}
+#movie1{
+    color: rgb(233, 225, 225);
+    font-size: 30px;
+    align-self: center;
+}
+.overlayText2{
+    position:absolute;
+ top: 315px;
+  left:52%;
+  border: rgb(15, 14, 14,0.5);
+  z-index:1;
+}
+.overlayText3{
+    position:absolute;
+    top: 680px;
+     left:1%;
+     border: rgb(15, 14, 14,0.5);
+     z-index:1;
+}
+.overlayText4{
+    position:absolute;
+    top: 680px;
+     left: 52%;
+     border: rgb(15, 14, 14,0.5);
+     z-index:1;
+}
+
+
 /* --------------------------Slide Shows---------------------------------------------------- */
 * {box-sizing:border-box}
 
@@ -554,3 +590,4 @@ main section article p a{
     text-align: center;
     margin: 15px 48px;
 }
+
