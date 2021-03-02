@@ -201,9 +201,6 @@ main article section {
   margin: 400px 0 30px 0; 
 }
 
-/*#toprated section iframe {
-/* margin-right: 10px; */
-}*/
 
 .left {
     float: left;
@@ -356,23 +353,34 @@ td.imgcontainer {
 }
 .teampic{
     border-radius: 50%;
-    width: 251px;
-    height: 251px;
+    width:130px;
+    height: 130px;
     
 }
   .cont  {
     float: left;
+    margin-left: 62px;
+    padding-top:22px;
+
+}
+#left {
+    margin-left: 175px;
 }
 
 
 h4{
-    color:red;
-    font-size: 300%;
-    padding-top: 70px;
+    color:white;
+    font-size: 150%;
+    padding-top: 54px;
+    padding-left: 13px;
+   
+    
 }
 
 i{
-   float: right; }
+   float: left;
+   margin-left: 15px;
+color:#F65560 }
 
 #form input[type=text]{
     width:300px;
