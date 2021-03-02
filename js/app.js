@@ -1,26 +1,59 @@
+'use strict';
+
+///////////////////////////// Favorite list /////////////////////////
+
 const FavoriteList = function(favMovies) {
   this.favMovies = favMovies;
 };
 
+// eslint-disable-next-line no-unused-vars
 const favList = new FavoriteList([]);
 
 
 FavoriteList.prototype.addToFavList = function(title, year, category, poster) {
   this.favMovies.push(new Movie(title, year, category, poster));
-  // console.log(this.favMovies);
+  console.log(this.favMovies);
 };
 
 FavoriteList.prototype.saveToLocalStorage = function() {
-  const movies = JSON.parse(localStorage.getItem('favMovies'));
-  if (movies===null){
-      movies=[];
+  let movies = JSON.parse(localStorage.getItem('favMovies'));
+
+  if (movies === null) {
+    movies = [];
   }
 
   localStorage.setItem('favMovies', JSON.stringify(movies.concat(this.favMovies)));
+
+};
+
+////////////////////////////////////// Watch List ///////////
+
+const WatchList = function(watchMovies) {
+  this.watchMovies = watchMovies;
+};
+
+// eslint-disable-next-line no-unused-vars
+const myWatchList = new WatchList([]);
+
+WatchList.prototype.myWatchList = function(title, year, category, poster) {
+  this.watchMovies.push(new Movie(title, year, category, poster));
+  console.log(this.watchMovies);
+};
+
+
+WatchList.prototype.saveToLocalStorage2 = function() {
+  let wMovie = JSON.parse(localStorage.getItem('watchMovies'));
+
+  if (wMovie === null) {
+    wMovie = [];
+  }
+
+  localStorage.setItem('watchMovies', JSON.stringify(wMovie.concat(this.watchMovies)));
 };
 
 
 
+/////////////////////////////////////////////////////////////////////////////////
 
 
 const Movie = function(title, year, category) {

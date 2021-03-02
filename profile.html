@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-
 <body>
     <header>
         <nav>
-            <a href="./"><img src="./images/logo2.png" alt="logo"></a>
+            
             <ul>
-                <li><a href="index.html"> Home</a></li>
-                <li> <a href="profile">Profile</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a id="logo" href="../">Movie <span style="color:white;">Tracker</span></a></li>
+                <li><a class="nav" href="../index.html"> Home</a></li>
+                <li><a class="nav" href="../profile.html">Profile</a></li>
+                <li><a class="nav" href="../aboutus.html">About Us</a></li>
+                <li><a class="nav" href="../contactus.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="profile">
-            <center>
-                <h1>Hello, (name)!</h1>
-                <img src="./images/profileAvatar.png" alt="profileAvatar">
-                <h2>Welcome to your profile, you can view and edit your lists here.</h2>
+            <section id="profiledetails">
+                <h2>Hello!</h2>
+                <h3>Welcome to your profile, you can view and edit your lists here. <br> <a style="color:white;" href="#watchList">Click Here to see your watchlist</a></h3>
+            </section>
+               
 
-                <section id="profileContainer">
+                <section id="favoriteList">
                     <h3>Your Favorites: </h3>
-                    <table id="favoriteList">
+                    <table>
                         <thead>
                             <tr>
                                 <th>Remove</th>
                                 <th>Title</th>
                                 <th>Year</th>
                                 <th>Category</th>
+                                <th>Poster</th>
                             </tr>
                         </thead>
                         <tbody id="tbody1">
+                            <!-- <td>X</td>
+                            <td>Intersteller</td>
+                            <td><img src="" alt="Intersteller"></td> -->
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                 
+                </section>
+                <section id="watchList">
+                       <h3> Your Watch List :</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Remove</th>
+                                <th>Title</th>
+                                <th>Year</th>
+                                <th>Category</th>
+                                <th>Poster</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody2">
                             <!-- <td>X</td>
                             <td>Intersteller</td>
                             <td><img src="" alt="Intersteller"></td> -->
@@ -68,17 +94,10 @@
                         <tfoot></tfoot>
                     </table>
                 </section> -->
-            </center>
         </div>
     </main>
     <footer>
-        <section>
-            <img src="./images/logo2.png" alt="logo">
-            <article>
-                <h6>&copyMovies Tracker</h6>
-            </article>
-        </section>
-
+        <a id="footerlogo" href="./">&copy; Movie Tracker 2021</a>
     </footer>
     <script src="./js/app.js"></script>
     <script src="./js/profile.js"></script>
