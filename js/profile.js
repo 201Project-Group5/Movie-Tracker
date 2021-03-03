@@ -18,7 +18,7 @@ function populateTable() {
     let td5El = document.createElement('td');
     let imgEl = document.createElement('img');
 
-    td1imgEl.src = './images/trash.svg';
+    td1imgEl.src = '../images/trash.svg';
     td1imgEl.setAttribute('class', 'trash');
     td2El.textContent = aflamy[i].title;
     td3El.textContent = aflamy[i].year;
@@ -55,7 +55,7 @@ function populateWatchTable(){
     let td5El2 = document.createElement('td');
     let imgEl2 = document.createElement('img');
 
-    td1imgEl2.src = './images/trash.svg';
+    td1imgEl2.src = '../images/trash.svg';
     td1imgEl2.setAttribute('class', 'trash');
     td2El2.textContent = aflamy2[x].title;
     td3El2.textContent = aflamy2[x].year;
